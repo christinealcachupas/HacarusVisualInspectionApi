@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
     <PackageId>SDDApi</PackageId>
-    <PackageVersion>1.0.5-alpha</PackageVersion>
+    <PackageVersion>1.0.6-alpha</PackageVersion>
     <Owners>Hacarus Inc.</Owners>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Summary>Hacarus Visual Inspection Api Wrapper for C#</Summary>

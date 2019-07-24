@@ -9,7 +9,7 @@ script:
   - dotnet restore
   - dotnet test HacarusVisualInspectionApi.Tests
   - if [ -n "$TRAVIS_TAG" ]; then 
-    xbuild /p:Configuration=Release ./HacarusVisualInspectionApi/HacarusVisualInspectionApi.sln
-    nuget pack ./HacarusVisualInspectionApi/HacarusVisualInspectionApi.nuspec -Verbosity detailed
-    nuget push ./SDDApi.*.nupkg -Verbosity detailed -ApiKey $NugetApiKey -Source $Source
+    xbuild /p:Configuration=Release ./HacarusVisualInspectionApi/HacarusVisualInspectionApi.sln;
+    nuget pack ./HacarusVisualInspectionApi/HacarusVisualInspectionApi.nuspec -Verbosity detailed;
+    nuget push ./SDDApi.*.nupkg -Verbosity detailed -ApiKey $NugetApiKey;
     fi
