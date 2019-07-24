@@ -8,3 +8,7 @@ script:
   - dotnet build HacarusVisualInspectionApi
   - dotnet restore
   - dotnet test HacarusVisualInspectionApi.Tests
+  - if [ -n "$TRAVIS_TAG" ]; then 
+      msbuild /p:Configuration=Release HacarusVisualInspectionApi.sln;
+      nuget push SSDApi.*.nupkg -Source bin/Release/;
+     fi
